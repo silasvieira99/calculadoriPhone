@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c93a3c9a7b.js" crossorigin="anonymous"></script>
+    <title>Calculadora iPhone</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="area-calc">
+
+            <div>
+                <input id="visor" type="text" disabled="desable">
+            </div>
+
+            <div>
+                <button class="cinza" onclick="calcular('acao','ac')">AC</button>
+                <button class="cinza" onclick="calcular('acao','oposto')">+/-</button>
+                <button class="cinza" onclick="calcular('acao','porcentagem')">%</button>
+                <button class="laranja" onclick="calcular('acao','/')"><i class="fa-solid fa-divide" style="color: #fcfcfc;"></i></button>
+            </div>
+
+            <div>
+                <button onclick="calcular('numero', 7)">7</button>
+                <button onclick="calcular('numero', 8)">8</button>
+                <button onclick="calcular('numero', 9)">9</button>
+                <button onclick="calcular('acao','*')" class="laranja"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+            </div>
+
+            <div>
+                <button onclick="calcular('numero', 4)">4</button>
+                <button onclick="calcular('numero', 5)">5</button>
+                <button onclick="calcular('numero', 6)">6</button>
+                <button onclick="calcular('acao','-')" class="laranja"><i class="fa-solid fa-minus" style="color: #ffffff;"></i></button>
+            </div>
+
+            <div>
+                <button onclick="calcular('numero', 3)">3</button>
+                <button onclick="calcular('numero', 2)">2</button>
+                <button onclick="calcular('numero', 1)">1</button>
+                <button onclick="calcular('acao','+')" class="laranja"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+            </div>
+
+            <div>
+                <button onclick="calcular('numero', 0)" class="duplo">0</button>
+                <button>,</button>
+                <button onclick="calcular('acao','=')" class="laranja"><i class="fa-solid fa-equals" style="color: #ffffff;"></i></button>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="javascript.js"></script>
+</body>
+</html>
